@@ -28,6 +28,18 @@ a:hover {
   text-decoration: underline;
 }
 
+.link-button {
+  color: #8549ba;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.link-button:hover {
+  color: #a560eb;
+  text-decoration: underline;
+}
+
 input:focus-visible {
   outline: #a560eb;
   border-color: #a560eb;

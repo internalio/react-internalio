@@ -66,8 +66,8 @@ function App() {
                       setParams(newParams);
                     }}
                   />
-                  <a
-                    className="App-param-field-remove"
+                  <button
+                    className="App-param-field-remove link-button"
                     onClick={() => {
                       const newParams = { ...params };
                       delete newParams[key];
@@ -75,12 +75,12 @@ function App() {
                     }}
                   >
                     remove
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
-            <a
-              className="App-params-fields-add"
+            <button
+              className="App-params-fields-add link-button"
               onClick={() => {
                 const newParams = { ...params };
                 const paramName = `param${++paramCounter}`;
@@ -89,7 +89,7 @@ function App() {
               }}
             >
               add param
-            </a>
+            </button>
           </div>
         </div>
       </div>
