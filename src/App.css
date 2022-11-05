@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #efefef;
+}
+
+.App-header {
+  flex-grow: 0;
+  padding-bottom: 2em;
+}
+
+.App-sub-head {
+  margin-top: 0.3em;
+}
+
+.App-body {
+  flex-grow: 1;
+  width: 100%;
+  background: #29292d;
+  position: relative;
+}
+
+.App-logo {
+  height: 60px;
+  padding-top: 40px;
+}
+
+.App-fields {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.App-url-input {
+  display: block;
+  margin-top: 0.3em;
+  font-size: calc(10px + 2vmin);
+  padding: 8px;
+  border-radius: 8px;
+  width: calc(100% - 22px);
+  border-width: 3px;
+}
+
+.App-small-fields {
+  font-size: 14px;
+}
+
+.App-small-fields label,
+.App-small-fields input {
+  width: 8ch;
+}
+
+.App-small-fields-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 0;
+}
+
+.App-params-fields-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-param-field {
+  position: relative;
+}
+
+.App-param-field-remove {
+  position: absolute;
+  right: -7ch;
+  font-size: 12px;
+}
+
+.App-params-fields-add {
+  margin-top: 0.5em;
+  font-size: 12px;
+}
+
+.App-preview-container {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.App-preview-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c2c2c2;
+  margin: auto;
+  outline: dashed 1px #c2c2c2;
+  outline-offset: -1px;
+  font-size: calc(10px + 1vmin);
+  font-style: italic;
+}
