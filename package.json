@@ -2,6 +2,7 @@
   "name": "react-internalio",
   "version": "0.1.4",
   "private": false,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:consolecorp/react-internalio.git"
