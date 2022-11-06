@@ -23,10 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "build:npm": "webpack --config npm.config.js --mode production",
     "eject": "react-scripts eject",
-    "publish:npm": "rm -rf dist && mkdir dist && yarn build:npm && cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md && cd dist && npm publish --registry https://registry.npmjs.org"
+    "clean-type-defs": "rm App.d.ts && rm App.d.ts.map && rm index.d.ts && rm index.d.ts.map",
+    "cp-static-files": "cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md",
+    "publish:npm": "rm -rf dist && mkdir dist && yarn build:npm && yarn cp-static-files && cd dist && yarn clean-type-defs && npm publish --registry https://registry.npmjs.org"
   },
   "eslintConfig": {
     "extends": [
