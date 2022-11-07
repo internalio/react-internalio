@@ -20,7 +20,7 @@ import { Space } from "react-internalio";
 function App() {
   return (
     <Space
-      url="https://https://secure.internal.io/environments/default/spaces/example"
+      url="https://secure.internal.io/environments/default/spaces/example"
       params={{ id: "123"}}
     />
   )
@@ -31,7 +31,7 @@ function App() {
 ### Props
 
 - url - The url of the Internal.io Space to embed. Required
-- params - An object that will be serialized into query string parameters and passed to the Space
+- params - An object that will be serialized into query string parameters and passed to the Space.
 - width - A value for the width style defaulting to `"100%"`.
 - height - A value for the height style defaulting to `"100%"`.
 
